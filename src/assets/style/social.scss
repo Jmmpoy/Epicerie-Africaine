@@ -1,0 +1,22 @@
+.socials {
+  position: absolute;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  margin-right: 2rem;
+
+  li {
+    margin: 0.5rem;
+    list-style-type: none;
+  }
+
+  li {
+    a {
+      color: black;
+      transition: 0.5s;
+      &:hover {
+        color: red;
+      }
+    }
+  }
+}

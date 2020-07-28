@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap");
+.contact-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-shadow: 0 0 1px 0 black;
+          box-shadow: 0 0 1px 0 black;
+  background-color: #f6f3ea;
+  font-family: "PlayFair Display";
+}
+
+.contact-section .contact-block {
+  width: 90vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: auto;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.contact-section .contact-block .contact-logo img {
+  max-width: 10rem;
+}
+
+.contact-section .contact-block .contact-text {
+  text-align: left;
+}
+
+.contact-section .contact-block .contact-text h4 {
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.contact-section .contact-block .contact-mail {
+  text-align: center;
+}
+/*# sourceMappingURL=contact.css.map */

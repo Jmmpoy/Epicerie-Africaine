@@ -1,0 +1,18 @@
+@import "../style/commons.scss";
+@import "../style/variables.scss";
+
+
+@import "../style/header.scss";
+@import "../style/social.scss";
+@import "../style/avis.scss";
+@import "../style/products.scss";
+@import "../style/ratings.scss";
+
+
+.App {
+  width: 100%;
+  // height: 100%;
+  display: flex;
+  flex-direction: column;
+
+}

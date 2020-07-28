@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap");
+.products {
+  background-color: #FCFCF9;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  overflow-x: auto;
+  position: relative;
+}
+
+.products .products-block {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  overflow-x: auto;
+  margin: auto;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+}
+
+.products .products-block::-webkit-scrollbar {
+  display: none;
+}
+
+.products .products-produit {
+  min-width: calc(100% / 3);
+  padding: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  scroll-snap-align: center;
+}
+
+.products .products-produit:hover {
+  opacity: 0.8;
+}
+
+.products .products-produit:hover .products-title p {
+  color: red;
+}
+
+.products .products-produit img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  max-width: 100%;
+  min-height: 236px;
+}
+
+.products .products-produit .products-title {
+  margin-top: 2rem;
+  font-family: "PlayFair Display";
+}
+
+.products .products-produit .products-title h4 {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.products .products-produit .products-title p {
+  margin-top: 1rem;
+  font-weight: 200;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.products .products-produit:nth-child(-n + 3) {
+  cursor: e-resize;
+}
+
+.products .products-produit:nth-last-child(-n + 3) {
+  cursor: w-resize;
+}
+
+.products .products-button {
+  width: 15rem;
+  background: transparent;
+  border: solid 1px black;
+  height: 50px;
+  margin-bottom: 5rem;
+  margin: auto;
+  -webkit-transform: translateY(-50px);
+          transform: translateY(-50px);
+  font-family: "PlayFair Display";
+  text-transform: uppercase;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.products .products-button a {
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+  font-size: 1rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.products .products-button:hover {
+  background: black;
+}
+
+.products .products-button:hover a {
+  color: white;
+}
+/*# sourceMappingURL=products.css.map */

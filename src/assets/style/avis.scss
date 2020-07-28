@@ -46,6 +46,16 @@
         &:hover {
           background: black;
           color: white;
+
+          a {
+            transition: 0.5s;
+            color: white;
+          }
+        }
+
+        a {
+          text-decoration: none;
+          color: black;
         }
       }
 

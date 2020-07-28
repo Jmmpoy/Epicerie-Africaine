@@ -3,7 +3,6 @@ import Ratings from "./ratings";
 import Rater from "react-rater";
 import "react-rater/lib/react-rater.css";
 
-
 export default function avis() {
   console.log(Ratings);
   const ratings = Ratings.map((avis, index) => (
@@ -22,7 +21,11 @@ export default function avis() {
     <section className="avis-section" id="avis">
       <div className="avis-blocks-left">
         <h1>AVIS</h1>
-        <button>Voir tous les avis</button>
+        <button>
+          <a href="https://l-epicerie-africaine.afrikrea.com/fr?class=a-black">
+            Voir tous les avis
+          </a>
+        </button>
       </div>
       <div className="avis-blocks-right">{ratings}</div>
     </section>

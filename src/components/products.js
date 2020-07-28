@@ -8,7 +8,7 @@ export default function products() {
 
   const products = gamme.map((produit, index) => (
     <div className="products-produit" key={index}>
-      <img src={produit.url} />
+      <img src={produit.url} alt="produit"/>
       <div className="products-title">
         <h4>{produit.title}</h4>
         <p>{produit.price}</p>

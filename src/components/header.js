@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export default function header() {
   const logoimg = require("../assets/logo_large.png");
-  const hero = require("../assets/gamme/bg2.jpg");
+  // const hero = require("../assets/gamme/bg2.jpg");
 
   const variants = {
     hidden: { opacity: 0 },
@@ -35,8 +35,8 @@ export default function header() {
       <nav className="header-nav">
         <motion.ul initial="hidden" variants={variants} animate="show">
           <motion.li className="logo" variants={item}>
-            <a>
-              <img src={logoimg} />
+            <a href="https://l-epicerie-africaine.afrikrea.com/fr">
+              <img src={logoimg} alt="logo" />
             </a>
           </motion.li>
           <motion.li variants={item} className="produits" id="products">
@@ -66,7 +66,7 @@ export default function header() {
         >
           De l'artisan à votre assiette.
         </motion.h4>
-        <Social variants={variants} item={item}/>
+        <Social variants={variants} item={item} />
       </div>
     </motion.header>
   );

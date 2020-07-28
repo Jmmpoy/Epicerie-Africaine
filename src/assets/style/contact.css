@@ -46,6 +46,11 @@
   margin-bottom: 0.5rem;
 }
 
+.contact-section .contact-block .contact-text a {
+  text-decoration: none;
+  color: red;
+}
+
 @media (max-width: 470px) {
   .contact-section .contact-block .contact-text {
     text-align: center;

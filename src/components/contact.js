@@ -9,11 +9,15 @@ export default function contact() {
       <div className="contact-block">
         <div className="contact-text">
           <h4>contact</h4>
-          <p>contact@lepicerieafricaine.fr</p>
+          <a href="mailto:contact@lepicerieafricaine.fr">
+            contact@lepicerieafricaine.fr
+          </a>
           <p>+33 6 29 33 26 36 </p>
         </div>
         <div className="contact-logo">
-          <img src={logo} alt="logo bis" />
+          <a href="https://l-epicerie-africaine.afrikrea.com/fr">
+            <img src={logo} alt="logo bis" />
+          </a>
         </div>
       </div>
     </motion.section>

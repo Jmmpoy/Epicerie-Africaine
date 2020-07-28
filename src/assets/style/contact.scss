@@ -34,6 +34,11 @@
         margin-bottom: 0.5rem;
       }
 
+      a {
+        text-decoration: none;
+        color: red;
+      }
+
       @media (max-width: 470px) {
         text-align: center;
       }

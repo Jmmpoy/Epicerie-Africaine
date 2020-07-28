@@ -9,6 +9,11 @@
   background-color: $beige;
   font-family: $font;
 
+  @media (max-width: 700px) {
+    flex-direction: column;
+    padding: 2rem 2rem 4rem 2rem;
+  }
+
   .avis-blocks {
     &-left {
       width: 50%;
@@ -34,6 +39,12 @@
           color: white;
         }
       }
+
+      @media (max-width: 700px) {
+        margin: auto;
+        text-align: center;
+        width: 100%;
+      }
     }
 
     &-right {
@@ -42,15 +53,23 @@
       width: 50%;
       overflow-y: auto;
 
+      @media (max-width: 700px) {
+        width: 100%;
+      }
+
       &::-webkit-scrollbar {
-      display: none;
-    }
+        display: none;
+      }
 
       .avis-comment-block {
         display: flex;
-        box-shadow: 0 0 .5px 0 black;
+        box-shadow: 0 0 0.5px 0 black;
         padding-top: 2rem;
         padding-bottom: 2rem;
+
+        @media (max-width: 700px) {
+          margin: auto;
+        }
 
         &:nth-child(-n + 3) {
           cursor: s-resize;
@@ -59,7 +78,6 @@
         &:nth-last-child(-n + 3) {
           cursor: n-resize;
         }
-
       }
 
       &-name {
@@ -70,6 +88,7 @@
         h5 {
           font-size: 1rem;
           font-weight: 600;
+          overflow-wrap: break-word;
         }
 
         p {

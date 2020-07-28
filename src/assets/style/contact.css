@@ -31,6 +31,12 @@
   max-width: 10rem;
 }
 
+@media (max-width: 470px) {
+  .contact-section .contact-block .contact-logo {
+    margin-top: 2rem;
+  }
+}
+
 .contact-section .contact-block .contact-text {
   text-align: left;
 }
@@ -40,7 +46,25 @@
   margin-bottom: 0.5rem;
 }
 
+@media (max-width: 470px) {
+  .contact-section .contact-block .contact-text {
+    text-align: center;
+  }
+}
+
 .contact-section .contact-block .contact-mail {
   text-align: center;
+}
+
+@media (max-width: 470px) {
+  .contact-section .contact-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 /*# sourceMappingURL=contact.css.map */

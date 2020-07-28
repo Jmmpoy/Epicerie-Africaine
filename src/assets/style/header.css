@@ -24,6 +24,15 @@ header .header-nav ul {
   display: flex;
 }
 
+@media (max-width: 400px) {
+  header .header-nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 header .header-nav ul li {
   list-style-type: none;
   text-align: center;
@@ -32,6 +41,14 @@ header .header-nav ul li {
   display: flex;
   text-transform: capitalize;
   letter-spacing: -1.5px;
+}
+
+@media (max-width: 400px) {
+  header .header-nav ul li:not(:first-of-type) {
+    margin: auto;
+    margin-top: 1rem;
+    width: calc(100% / 3);
+  }
 }
 
 header .header-nav ul li a {
@@ -49,6 +66,16 @@ header .header-nav ul .logo a img {
   max-width: 7rem;
 }
 
+@media (max-width: 400px) {
+  header .header-nav ul .logo {
+    margin: auto;
+    text-align: center;
+  }
+  header .header-nav ul .logo a {
+    width: 100%;
+  }
+}
+
 header .header-nav ul .produits,
 header .header-nav ul .avis,
 header .header-nav ul .contact {
@@ -64,6 +91,17 @@ header .header-nav ul .contact {
           justify-content: center;
   margin: 1rem;
   font-size: 1.2rem;
+}
+
+@media (max-width: 600px) {
+  header .header-nav ul .produits,
+  header .header-nav ul .avis,
+  header .header-nav ul .contact {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    font-size: 1rem;
+  }
 }
 
 header .header-nav ul .produits a,
@@ -127,5 +165,17 @@ header .header-title h4 {
 header .header-title h1,
 header .header-title h4 {
   margin-left: 4rem;
+}
+
+@media (max-width: 750px) {
+  header .header-title h1 {
+    font-size: 9.5vw;
+  }
+}
+
+@media (max-width: 500px) {
+  header .header-title h4 {
+    font-size: 1.2rem;
+  }
 }
 /*# sourceMappingURL=header.css.map */

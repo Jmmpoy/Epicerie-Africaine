@@ -76,6 +76,7 @@
      object-fit: contain;
   max-width: 100%;
   min-height: 236px;
+  max-height: 250px;
 }
 
 .products .products-produit .products-title {
@@ -95,6 +96,12 @@
   transition: 0.5s;
 }
 
+@media (max-width: 700px) {
+  .products .products-produit .products-title {
+    text-align: center;
+  }
+}
+
 .products .products-produit:nth-child(-n + 3) {
   cursor: e-resize;
 }
@@ -110,8 +117,8 @@
   height: 50px;
   margin-bottom: 5rem;
   margin: auto;
-  -webkit-transform: translateY(-50px);
-          transform: translateY(-50px);
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
   font-family: "PlayFair Display";
   text-transform: uppercase;
   -webkit-transition: 0.5s;

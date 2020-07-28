@@ -33,6 +33,12 @@ header .header-nav ul {
   }
 }
 
+header .header-nav ul .header-nav-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 header .header-nav ul li {
   list-style-type: none;
   text-align: center;

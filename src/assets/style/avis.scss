@@ -21,6 +21,10 @@
       h1 {
         font-size: 7rem;
         font-weight: 300;
+
+        @media (max-width: 700px) {
+          font-size: 6rem;
+        }
       }
 
       button {
@@ -33,6 +37,11 @@
         font-weight: 200;
         font-family: $font;
         transition: 0.5s;
+
+        @media (max-width: 700px) {
+          margin-top: 1rem;
+          margin-bottom: 1rem;
+        }
 
         &:hover {
           background: black;

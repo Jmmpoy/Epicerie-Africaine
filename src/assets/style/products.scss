@@ -53,6 +53,7 @@
       object-fit: contain;
       max-width: 100%;
       min-height: 236px;
+      max-height: 250px;
     }
 
     .products-title {
@@ -68,6 +69,10 @@
         margin-top: 1rem;
         font-weight: 200;
         transition: 0.5s;
+      }
+
+      @media (max-width: 700px) {
+        text-align: center;
       }
     }
 
@@ -87,7 +92,7 @@
     height: 50px;
     margin-bottom: 5rem;
     margin: auto;
-    transform: translateY(-50px);
+    transform: translateY(-20px);
     font-family: $font;
 
     text-transform: uppercase;

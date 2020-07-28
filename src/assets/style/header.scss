@@ -18,6 +18,10 @@ header {
         flex-direction: column;
       }
 
+      .header-nav-block {
+        display: flex;
+      }
+
       li {
         list-style-type: none;
 

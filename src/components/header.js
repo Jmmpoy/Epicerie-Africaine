@@ -39,15 +39,17 @@ export default function header() {
               <img src={logoimg} alt="logo" />
             </a>
           </motion.li>
-          <motion.li variants={item} className="produits" id="products">
-            <a href="#products">produits</a>
-          </motion.li>
-          <motion.li className="avis" variants={item} id="avis">
-            <a href="#avis">avis</a>
-          </motion.li>
-          <motion.li variants={item} className="contact" id="contact">
-            <a href="#contact">contact</a>
-          </motion.li>
+          <div className="header-nav-block">
+            <motion.li variants={item} className="produits" id="products">
+              <a href="#products">produits</a>
+            </motion.li>
+            <motion.li className="avis" variants={item} id="avis">
+              <a href="#avis">avis</a>
+            </motion.li>
+            <motion.li variants={item} className="contact" id="contact">
+              <a href="#contact">contact</a>
+            </motion.li>
+          </div>
         </motion.ul>
       </nav>
       <div className="header-title">

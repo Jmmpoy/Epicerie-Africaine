@@ -20,6 +20,10 @@
       img {
         max-width: 10rem;
       }
+
+      @media (max-width: 470px) {
+        margin-top: 2rem;
+      }
     }
 
     .contact-text {
@@ -29,10 +33,19 @@
         text-transform: uppercase;
         margin-bottom: 0.5rem;
       }
+
+      @media (max-width: 470px) {
+        text-align: center;
+      }
     }
 
     .contact-mail {
       text-align: center;
+    }
+
+    @media (max-width: 470px) {
+      flex-direction: column;
+      align-items: center;
     }
   }
 }
